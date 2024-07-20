@@ -1,3 +1,4 @@
+#Autor: PetusoTwo#
 import win32console
 import win32gui 
 import pynput.keyboard
