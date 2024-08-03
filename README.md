@@ -19,11 +19,6 @@ Este keylogger utiliza las bibliotecas `win32console`, `win32gui`, `pynput`, `sm
 - Python 3.x
 - Bibliotecas: `pywin32`, `pynput`
 
-Puedes instalar las bibliotecas necesarias usando `pip`:
-
-```bash
-pip install pywin32 pynput
-
 ## Uso
 
 ### Configuración del Correo Electrónico
@@ -48,3 +43,8 @@ Abre el archivo de código y establece las credenciales de tu correo electrónic
 > **Advertencia:** El uso de keyloggers puede ser ilegal y está sujeto a regulaciones estrictas en muchos países. Utiliza este software solo en entornos legales y con el consentimiento adecuado.
 >
 > **Responsabilidad:** El autor del código no se hace responsable del uso indebido de este software.
+
+Puedes instalar las bibliotecas necesarias usando `pip`:
+
+```bash
+pip install pywin32 pynput
